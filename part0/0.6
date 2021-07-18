@@ -1,0 +1,11 @@
+note over browser:
+browser pushes new note to list
+and renders notes to display
+end note
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+browser->server: HTTP POST new_note_spa
+server-->browser: 201: [{"message":"note created"}]
